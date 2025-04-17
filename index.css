@@ -94,6 +94,8 @@ p{
     justify-content: space-evenly;
     font-size: x-large;
     font-weight: 200;
+    /* height: 110px; */
+    
    
 }
 @media (max-width: 700px) { 
@@ -101,7 +103,7 @@ p{
    .SkillDesign { 
     margin-left: 120px;
     flex-basis: 50%;
-
+    height: 35px;
     margin-right: 50px;
      text-align: center; 
     } }
@@ -167,5 +169,13 @@ img{
     border: 2px solid rgb(160, 70, 70);
     
     border-radius: 2px;
+    width: 150px;
+    /* height: 150px; */
+    text-align: center;
 
+}
+
+
+#textSaad{
+    text-decoration: none;
 }

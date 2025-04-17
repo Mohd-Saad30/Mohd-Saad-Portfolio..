@@ -18,6 +18,21 @@ document.addEventListener("DOMContentLoaded", function() {
         //     }, 2000); // Optional delay before restarting
         // }
     }
+    const colorGenerator=()=>{
+        const hex="0123456789ABCDEF";
+        let word='#'
+        for (let i =0 ;i<6;i++){
+         let random=hex[Math.floor(Math.random()*16)];
+         word+=random;
+
+        }
+        return word;  
+    };
+
+    setInterval(() => {
+    document.getElementById('textSaad').style.color=colorGenerator()
+    }, 1000);
+
 
     typeWriter();
 });
