@@ -106,7 +106,12 @@ p{
     height: 35px;
     margin-right: 50px;
      text-align: center; 
-    } }
+    }
+    p{
+        font-size: large;
+    }
+
+}
 img{
     width: 160px;
     height: 150px;
