@@ -66,6 +66,7 @@ h3{
 
 @media (max-width:450px){
     #about_me p{
+        color: aqua;
         font-size: large;
         font-weight: 500;
         word-spacing: normal;
