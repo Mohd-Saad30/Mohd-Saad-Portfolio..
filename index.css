@@ -93,7 +93,8 @@ p{
     display: flex;
     line-height: 2rem;
     list-style: none;
-    justify-content: space-evenly;
+    margin-left: 6rem;
+    gap: 50px;
     font-size: x-large;
     font-weight: 200;
     /* height: 110px; */
