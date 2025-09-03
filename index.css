@@ -18,6 +18,7 @@ html {
     animation: gradient 5s cubic-bezier(0.22, 0.6, 1, 1) infinite;
     color: aliceblue;
     list-style: none;
+    border-radius: 0 1.5rem;
 }
 
 @keyframes gradient {
@@ -37,7 +38,7 @@ html {
 h1 {
     text-align: center;
     margin-bottom: 0.3rem;
-    margin-top: 0.5rem;
+    margin-top: 1rem;
     color: rgb(5, 68, 68);
     font-family: 'Times New Roman', Times, serif;
     text-decoration: underline;
@@ -47,12 +48,12 @@ h1 {
 #About {
     text-decoration: underline;
     margin-left: 5rem;
-    font-size: x-large;
+    font-size: 2rem;
 }
 
 h3 {
     margin-bottom: 0.5rem;
-    margin-top: 0.5rem;
+    margin-top: 1rem;
     color: rgb(4, 44, 44);
     font-family: 'Times New Roman', Times, serif;
     text-decoration: underline;
@@ -66,6 +67,9 @@ h3 {
     display: flex;
     margin-right: 3rem;
     padding: 2rem;
+    border-radius: 1.5rem;
+    margin-top: 1.5rem;
+    background: #22d3ee;
 
 }
 
@@ -74,27 +78,10 @@ h3 {
     margin-right: 2rem;
 }
 
-@media (max-width:450px) {
-    #about_me p {
 
-        font-size: larger;
-        font-weight: 600;
-        word-spacing: normal;
-    }
-    #About-me{
-        margin-left: 2rem;
-    }
-    #About{
-        margin-left: 2rem;
-    }
-    h3{
-     margin-left: 3rem;
-    }
-  
-}
 
 #skill {
-    margin-top: 0.2rem;
+    margin-top: 2rem;
 }
 
 #nav a {
@@ -103,7 +90,8 @@ h3 {
 
 #nav a:hover {
     cursor: pointer;
-    color: rgb(219, 28, 28);
+    color: #ffd700;
+    background: rgba(255,255,255,0.12);
 }
 
 p {
@@ -116,44 +104,22 @@ p {
 
 #Skills-img {
     display: flex;
-    line-height: 2rem;
-    list-style: none;
-    margin-left: 6rem;
-    gap: 50px;
+    flex-wrap: wrap;
+     justify-content: center;
+    margin: 2rem 0 2rem 0;
+    gap: 30px;
     font-size: x-large;
     font-weight: 200;
-    
-
-
 }
 
-@media (max-width: 700px) {
-    #Skills-img {
-        flex-wrap: wrap;
-        margin-left: 0%;
-        gap: 30px;
-    }
 
-    .SkillDesign {
-        margin-left: 120px;
-        flex-basis: 50%;
-        height: 35px;
-        margin-right: 50px;
-        text-align: center;
-    }
-
-    p {
-        font-size: large;
-    }
-
-}
 
 img {
-    width: 160px;
-    height: 150px;
-    border-radius: 45%;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
     object-fit: cover;
-
+    margin-top: 1rem;
 }
 
 #footer {
@@ -165,6 +131,8 @@ img {
     color: white;
     text-align: center;
     justify-content: center;
+    font-size: 1rem;
+    border-radius: 0 1.2rem;
 
 }
 
@@ -183,20 +151,17 @@ img {
     flex-direction: column;
     align-items: center;
     align-content: center;
-
-
 }
 
 
 
 #headPara {
     font-family: monospace;
-
-
     color: black;
-    /* Initial text color */
-    animation: typing 10s steps(40, end);
-
+    font-size: 1.2rem;
+    background: #f1f5f9;
+    padding: 1rem 1.5rem;
+    border-radius: 0.7rem;
 }
 
 @keyframes typing {
@@ -213,12 +178,21 @@ img {
 
     border: 2px solid rgb(160, 70, 70);
 
-    border-radius: 2px;
-    width: 150px;
-    
+    border-radius: 0.7rem;
+    width: 120px;
+     padding: 0.7rem 0;
     text-align: center;
+    font-weight: 600;
+    font-size: 1.1rem;
+    
+
 
 }
+   .SkillDesign:hover { 
+        background: #23a6d5;
+        color: #fff;
+        border-color: #e73c7e;
+    }
 
 
 #textSaad {
@@ -231,6 +205,8 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 2rem; 
+    margin-bottom: 2rem;
 }
 
 .code-editor-window {
@@ -283,4 +259,53 @@ img {
     color: #a3a3a3;
     margin-left: 1.2rem;
     line-height: 1.7;
+}
+
+
+ @media (max-width: 450px) {
+        #About-me {
+            margin-left: 0.5rem;
+            margin-right: 0.5rem;
+            padding: 0.5rem;
+        }
+        #About {
+            margin-left: 0.5rem;
+            font-size: 1.2rem;
+        }
+        h3 {
+            margin-left: 0.5rem;
+            font-size: 1.5rem;
+        }
+        #contact {
+            margin-left: 0.5rem;
+            margin-right: 0.5rem;
+            padding: 0.7rem;
+        }
+        img {
+            width: 120px;
+            height: 120px;
+        }
+    }
+
+    @media (max-width: 700px) {
+     #Skills-img {
+            gap: 18px;
+        }
+        .SkillDesign {
+            width: 100px;
+            font-size: 1rem;
+        }
+        h1, #About, h3 {
+            margin-left: 0;
+            text-align: center;
+            font-size: 2rem;
+        }
+        #About-me {
+            margin-left: 1rem;
+            margin-right: 1rem;
+        }
+        #contact {
+            margin-left: 1rem;
+            margin-right: 1rem;
+        }
 }
