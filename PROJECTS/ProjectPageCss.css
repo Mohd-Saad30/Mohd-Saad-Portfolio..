@@ -5,18 +5,19 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(to right, #2575fc, #2575fc);
     color: #333;
 }
 
-/* Remove blue underline from links */
+
 a {
     text-decoration: none;
     color: inherit;
 }
 
 #wrapper {
+    display: flex;
+    flex-wrap: wrap;
     min-height: 100dvh;
     width: 100%;
     display: flex;
@@ -44,7 +45,7 @@ a {
 .ProjectContainer {
     border: 2px solid black;
     height: auto;
-    width: 280px;
+    width: auto;
     display: flex;
     flex-direction: column;
     border-radius: 15px;
@@ -81,7 +82,7 @@ p {
     color: #444;
 }
 
-/* Mobile responsiveness */
+
 @media (max-width: 1024px) {
     #div {
         gap: 20px;
