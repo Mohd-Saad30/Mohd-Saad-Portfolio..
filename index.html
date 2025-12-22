@@ -4,118 +4,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-<link rel="stylesheet" href="index.css">
+    <title>Mohd Saad | Frontend Developer</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
-    <div id="container">
-        <div>
-            <h1 id="textSaad">WELCOME TO MY PORTFOLIO : MOHD SAAD</h1>
-        </div>
-        <div id="nav">
-            <li><a href="https://www.linkedin.com/in/mohd-saad-08364128b/">LinkedIn</a></li>
-            <li><a href="https://github.com/Mohd-Saad30">GitHub </a></li>
+    <header id="navbar">
+        <div class="container nav-container">
+            <h3 font-family: 'VT323' , Arial>MOHD SAAD</h3>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="https://www.linkedin.com/in/mohd-saad-08364128b/">LinkedIn</a></li>
+                    <li><a href="https://github.com/Mohd-Saad30">GitHub </a></li>
 
-            <li> <a href="#contact">Contact</a></li>
-            <li> <a href="./PROJECTS/ProjectPageUpgrade.html">Project</a></li>
+                    <li> <a href="#contact">Contact</a></li>
+                    <li> <a href="./PROJECTS/ProjectPageUpgrade.html">Project</a></li>
+                </ul>
+            </nav>
         </div>
-        </br>
-        <div id="head">
-            <div>
-                <h4 style="font-size: larger;">
-                    <p>
-                    <pre id="headPara">Hi, I am Mohd Saad. 
-I am Frontend developer.</pre>
+
+    </header>
+    <main>
+        <section id="hero">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <p id="line1" class="greeting">Hi, I am</p>
+                    <h1 id="line2">MOHD SAAD</h1>
+                    <h2 id="line3" class="title">Frontend Developer</h2>
+                    <p id="line4" class="bio">
+                        Frontend Engineering for web and exploring backend for full stack.
+                        Currently a Computer Science student at Jamia Hamdard University.
                     </p>
-                </h4>
-            </div>
-            <br>
-            <div><img src="./img/per.jfif" alt=""></div>
+                    <div class="cta-group">
 
-        </div>
-
-        <h2 id="About">About me</h2>
-        <div id="About-me">
-
-            <div id="about_me">
-
-                <p>Hi, I'm Mohd Saad. I am currently a Third-year student pursuing a B.Tech degree in Computer Science
-                    and Engineering at Jamia Hamdard University. </p>
-                <br>
-                <p>I have a strong passion for Frontend Development and thoroughly enjoy the journey in this field . I
-                    have developed several foundational projects, including a Employee Management Scissor and a Rock Paper
-                    Scissors game, using HTML, CSS, JavaScript and React.</p>
-                <br>
-                <p>I have also explored the basics of Scilab, C++, Java, MATLAB and Robotic Process Automation (RPA).</p>
-            </div>
-            <div id="img">
-
-            </div>
-
-        </div>
-
-
-        <div class="aboutMeWindow">
-            <div class="code-editor-window">
-                <div class="window-bar">
-
-                    <span class="filename">developer.js</span>
+                        <a href="./PROJECTS/ProjectPageUpgrade.html" class="btn btn-secondary">View Projects</a>
+                    </div>
                 </div>
-                <div class="code-block">
-                    <div class="code-purple">
-                        const <span class="code-blue">developer</span> = {
+
+                <div class="hero-visual">
+                    <div class="code-window">
+                        <div class="window-header">
+                            <div class="dots">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <span class="filename">developer.js</span>
+                        </div>
+                        <div class="code-content">
+                            <div class="line"><span class="keyword">const</span> <span class="variable">developer</span>
+                                <span class="operator">=</span> {
+                            </div>
+                            <div class="line indent"> <span class="property">name</span>: <span class="string">'Mohd
+                                    Saad'</span>,</div>
+                            <div class="line indent"> <span class="property">role</span>: <span class="string">'Frontend
+                                    Developer'</span>,</div>
+                            <div class="line indent"> <span class="property">location</span>: <span
+                                    class="string">'Delhi, India'</span>,</div>
+                            <div class="line indent"> <span class="property">skills</span>: [
+                                <span class="string">'React'</span>, <span class="string">'JavaScript'</span>,
+                                <span class="string">'HTML'</span>, <span class="string">'CSS'</span>,<span
+                                    class="string">'Express'</span>, <span class="string">'C++'</span> ],
+
+                                <div class="line indent"> <span class="property">Availability</span>: <span
+                                        class="boolean">true</span></div>
+                                <div class="line">};</div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="code-line">
-                        name: <span class="code-green">'MOHD SAAD'</span>,
+                </div>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            I am currently a Third-year student pursuing a B.Tech degree in Computer Science
+                            and Engineering at Jamia Hamdard University.
+                        </p>
+                        <p>
+                            I have a strong passion for Frontend Development and thoroughly enjoy the journey in this
+                            field.
+                            I have developed several foundational projects, including an <strong>Employee Management
+                                System</strong>
+                            and a Rock Paper Scissors game, using HTML, CSS, JavaScript, and React.
+                        </p>
+                        <p>
+                            Beyond web development, I have also explored the basics of Scilab, C++, Java, MATLAB,
+                            and Robotic Process Automation (RPA).
+                        </p>
                     </div>
-                    <div class="code-line">
-                        title: <span class="code-green">'Frontend Developer'</span>,
+                    <div class="about-image">
+                        <img src="./img/per.jfif" alt="Mohd Saad">
                     </div>
-                    <div class="code-line">
-                        location: <span class="code-green">'Delhi, India'</span>,
-                    </div>
-                    <div class="code-line">
-                        available: <span class="code-orange">true</span>,
-                    </div>
-                    <div class="code-line">
-                        skills: [<span class="code-green">'React'</span>, <span class="code-green">'JavaScript'</span>,
-                        <span class="code-green">'Html'</span>,<span class="code-green">'CSS'</span>,<span
-                            class="code-green">'C++'</span>],
-                    </div>
-                    <div class="code-line">
-                        passion: <span class="code-green">'Building amazing things'</span>
-                    </div>
-                    <div class="code-purple">}</div>
                 </div>
             </div>
-        </div>
-        <div id="skill">
-            <h3>Skill</h3>
+        </section>
 
-            <div id="Skills-img">
-                <div class="SkillDesign">C++</div>
-                <div class="SkillDesign">C</div>
-                <div class="SkillDesign">JavaScript</div>
-                <div class="SkillDesign">HTML</div>
-                <div class="SkillDesign">CSS</div>
-                <div class="SkillDesign">React</div>
-                <div class="SkillDesign">Express</div>
+        <section id="skills">
+            <div class="container">
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="skills-marquee">
+                    <div class="marquee-content">
+                        <span>React</span> <span>JavaScript</span> <span>HTML5</span> <span>CSS3</span>
+                        <span>Tailwind</span> <span>C++</span> <span>Java</span>
+                        <span>MATLAB</span> <span>Git</span> <span>VSCode</span> <span>RPA</span>
+                        <span>React</span> <span>JavaScript</span> <span>HTML5</span> <span>CSS3</span>
+                        <span>Tailwind</span> <span>C++</span> <span>C</span> <span>Java</span>
+                        <span>MATLAB</span> <span>Git</span> <span>VSCode</span> <span>RPA</span>
+                    </div>
+                </div>
             </div>
-            <div id="contact">
-                <h2>Contact</h2>
-                <p><a href="https://mail.google.com/mail/?view=cm&fs=1&to=saadmohd835@gmail.com">Email:
-                        saadmohd835@gmail.com</a></p>
-            </div>
-
-            <div id="footer">
-
-                <p>&copy; copyright 2025 Mohd Saad.</p>
-
-
-            </div>
-        </div>
-        <script src="./index.js"></script>
+        </section>
+        <section id="contact">
+            <div class="container contact-container">
+                <h2 class="section-title">Get In Touch</h2>
+                <p style="color:darkslateblue; font-weight: 700;">
+                    I'm currently looking for new opportunities. Whether you have a question or just want to say hi,
+                    I'll try my best to get back to you!
+                </p>
+                <a class="email-btn" href="https://mail.google.com/mail/?view=cm&fs=1&to=saadmohd835@gmail.com">Email:
+                    saadmohd835@gmail.com</a>
+        </section>
+    </main>
+    <script src="./index.js"></script>
 </body>
 
 </html>
