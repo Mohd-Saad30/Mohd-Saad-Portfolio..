@@ -238,8 +238,6 @@ img {
 }
 
 .contact-container {
-    max-width: 600px;
-    margin: 0 auto;
       border-top: 1px solid rgb(33, 187, 166);
     h2{
         text-decoration: underline;
