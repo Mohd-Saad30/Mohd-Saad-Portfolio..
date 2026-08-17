@@ -2,10 +2,10 @@ document.addEventListener("DOMContentLoaded", function () {
   const elements = [
     { id: "line1", text: "Hi, I am" },
     { id: "line2", text: "MOHD SAAD" },
-    { id: "line3", text: "Frontend Developer" },
+    { id: "line3", text: "Web Developer" },
     {
       id: "line4",
-      text: "Frontend Engineering for web and exploring backend too. Currently a Computer Science student at Jamia Hamdard University.",
+      text: "I have built several projects including \"Depression Prediction\", \"Employee Management System\" . Beyond Web Development, I am exploring DSA, C++,Python and Calling LLM through API . Currently a Final-year Computer Science student at Jamia Hamdard University "
     },
   ];
 
